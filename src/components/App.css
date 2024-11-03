@@ -1,0 +1,93 @@
+.hog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.card-container{ 
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 16px; /* Space between cards */
+    padding: 16px;
+
+
+}
+.ui.card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color: #ffffff;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.ui.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+
+.ui.card .image img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.ui.card .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.ui.card .content h4 {
+    font-size: 1.3rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.ui.card .details {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.ui.card .details p {
+    margin: 5px 0;
+    font-size: 10px;
+    color: #555;
+    text-align: left;
+}
+
+.ui.card.show-details .details p {
+    max-height: 100px; 
+    padding-top: 10px;
+    overflow: auto; 
+
+}
+
+.content {
+    background-color: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #ddd; /* Light border around the content */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Space inside the box */
+    margin: 16px; /* Space outside the box */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s; /* Smooth scaling effect on hover */
+}
+
+.content:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+ 
+
+
